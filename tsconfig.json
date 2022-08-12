@@ -22,7 +22,7 @@
     "strict": true, // 是否启动严格模式
     "skipLibCheck": true // 跳过类库检测
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "docs"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "exclude": [
     // 排除掉哪些类库
     "node_modules",
