@@ -1,0 +1,45 @@
+{
+  "name": "hovey-ui",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs",
+    "prepare": "husky install",
+    "commit": "npx git-cz"
+  },
+  "dependencies": {
+    "vue": "^3.2.37"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.24.2",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@hovey/eslint-config-vue": "^1.0.0",
+    "@hovey/stylelint-config-basic": "^1.0.0",
+    "@iconify-json/ic": "^1.1.8",
+    "@unocss/preset-attributify": "^0.45.5",
+    "@unocss/preset-icons": "^0.45.5",
+    "@unocss/preset-uno": "^0.45.5",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.21.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "postcss": "^8.4.16",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.10.0",
+    "typescript": "^4.7.4",
+    "unocss": "^0.45.5",
+    "vite": "^3.0.5",
+    "vitepress": "1.0.0-alpha.4",
+    "vue-tsc": "^0.40.1"
+  }
+}
