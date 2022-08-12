@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
+import { demoBlockPlugin } from 'vitepress-theme-demoblock'
 
 export default defineConfig({
-  title: 'Configured Example',
-  description: 'Example of configured options of VitePress',
+  title: 'Hovey-UI',
+  description: '前端工程化搭建组件库实践',
   themeConfig: {
     sidebar: {
       '/': [
@@ -16,6 +17,12 @@ export default defineConfig({
           ],
         },
       ],
+    },
+  },
+  markdown: {
+    config: md => {
+      // const { demoBlockPlugin } = require('vitepress-theme-demoblock')
+      md.use(demoBlockPlugin)
     },
   },
 })

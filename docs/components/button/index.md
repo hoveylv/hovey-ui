@@ -1,41 +1,66 @@
----
-title: Multiple levels outline
-editLink: true
-outline: 'deep'
----
+# Button 按钮
 
-# h1 - 1
+常用操作按钮
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+## 基础用法
 
-## h2 - 1
+基础的函数用法
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+:::demo 使用`size`、`color`、`pain`、`round`属性来定义 Button 的样式。
 
-### h3 - 1
+```vue
+<template>
+  <div style="margin-bottom:20px;">
+    <HButton color="blue">主要按钮</HButton>
+    <HButton color="green">绿色按钮</HButton>
+    <HButton color="gray">灰色按钮</HButton>
+    <HButton color="yellow">黄色按钮</HButton>
+    <HButton color="red">红色按钮</HButton>
+  </div>
+  <div style="margin-bottom:20px;">
+    <HButton color="blue" plain>朴素按钮</HButton>
+    <HButton color="green" plain>绿色按钮</HButton>
+    <HButton color="gray" plain>灰色按钮</HButton>
+    <HButton color="yellow" plain>黄色按钮</HButton>
+    <HButton color="red" plain>红色按钮</HButton>
+  </div>
+  <div style="margin-bottom:20px;">
+    <HButton size="small" plain>小按钮</HButton>
+    <HButton size="medium" plain>中按钮</HButton>
+    <HButton size="large" plain>大按钮</HButton>
+  </div>
+  <div style="margin-bottom:20px;">
+    <HButton color="blue" round plain icon="search">搜索按钮</HButton>
+    <HButton color="green" round plain icon="edit">编辑按钮</HButton>
+    <HButton color="gray" round plain icon="check">成功按钮</HButton>
+    <HButton color="yellow" round plain icon="message">提示按钮</HButton>
+    <HButton color="red" round plain icon="delete">删除按钮</HButton>
+  </div>
+  <div style="margin-bottom:20px;">
+    <HButton color="blue" round plain icon="search"></HButton>
+    <HButton color="green" round plain icon="edit"></HButton>
+    <HButton color="gray" round plain icon="check"></HButton>
+    <HButton color="yellow" round plain icon="message"></HButton>
+    <HButton color="red" round plain icon="delete"></HButton>
+  </div>
+</template>
+```
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+:::
 
-#### h4 - 1
+## 图标按钮
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+带图标的按钮可增强辨识度（有文字）或节省空间（无文字）。
 
-### h3 - 2
+:::demo 设置 icon 属性即可，icon 的列表可以参考 Element 的 icon 组件，也可以设置在文字右边的 icon ，只要使用 i 标签即可，可以使用自定义图标。
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-#### h4 - 2
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-## h2 - 2
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-### h3 - 3
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-#### h4 - 3
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+```vue
+<template>
+  <div class="flex flex-row">
+    <HButton icon="edit" plain></HButton>
+    <HButton icon="delete" plain></HButton>
+    <HButton icon="share" plain></HButton>
+    <HButton round plain icon="search">搜索</HButton>
+  </div>
+</template>
+```

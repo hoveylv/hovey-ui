@@ -40,6 +40,7 @@
     "unocss": "^0.45.5",
     "vite": "^3.0.5",
     "vitepress": "1.0.0-alpha.4",
+    "vitepress-theme-demoblock": "^1.4.2",
     "vue-tsc": "^0.40.1"
   }
 }
