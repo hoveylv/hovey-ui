@@ -11,7 +11,8 @@
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs",
     "prepare": "husky install",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "test:run": "vitest run"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -28,9 +29,11 @@
     "@unocss/preset-uno": "^0.45.5",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "@vue/test-utils": "^2.0.2",
     "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.21.0",
+    "happy-dom": "^6.0.4",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "postcss": "^8.4.16",
@@ -41,6 +44,7 @@
     "vite": "^3.0.5",
     "vitepress": "1.0.0-alpha.4",
     "vitepress-theme-demoblock": "^1.4.2",
+    "vitest": "^0.21.1",
     "vue-tsc": "^0.40.1"
   }
 }

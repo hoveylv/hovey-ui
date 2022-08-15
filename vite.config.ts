@@ -1,3 +1,5 @@
+/// <reference types="vitest" />
+
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -6,7 +8,7 @@ import Unocss from './config/unocss'
 export default defineConfig({
   plugins: [vue(), vueJsx({}), Unocss()],
   build: {
-    minify: false,
+    minify: 'esbuild',
     sourcemap: true,
     cssCodeSplit: true,
     lib: {
@@ -24,6 +26,13 @@ export default defineConfig({
         },
         exports: 'named',
       },
+    },
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    transformMode: {
+      web: [/.[tj]sx$/],
     },
   },
 })
