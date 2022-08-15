@@ -24,5 +24,3 @@
 ## LICENSE
 
 [MIT](../../LICENSE)
-
-Copyright (c) 2022 - present Ran (Joseph) Xia
