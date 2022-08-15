@@ -1,8 +1,8 @@
 {
   "name": "hovey-ui",
   "version": "0.0.1",
-  "description": "",
   "main": "index.js",
+  "module": "./dist/hovey-ui.js",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
